@@ -7,7 +7,7 @@
     z-index: 9997;
     transition: all 0.5s;
     padding: 15px;
-    overflow-y: auto;
+    
 }
 
 /* Body */
@@ -40,3 +40,58 @@ body{
   width: 55px;
   height: 55px;
 }
+
+.Snavbar ul {
+  position: relative;
+  list-style: none;
+  
+}
+.Snavbar ul li a {
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+  font-size: 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #504a40;
+  padding: 10px 30px;
+  height: 70px;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s;
+  
+}
+.Snavbar ul li a:hover {
+  background-color:#F87714;
+  color: #FAE0B4;
+}
+.Snavbar a span, .Snavbar a:focus span {
+  padding: 0 5px 0 7px;
+}
+.Snavbar ul li a img {
+  height: 60px;
+  width: 60px;
+}
+.Snavbar ul ul {
+  position: absolute;
+  left: 210px;
+  top: 0;
+  display: none;
+}
+
+.Snavbar ul .dropdown {
+  position: relative;
+}
+.Snavbar ul .dropdown:hover ul {
+  display: initial;
+}
+
+@media (min-width: 992px) {
+  
+  .Snavbar a span, .Snavbar a:focus span {
+    display: none;
+  }
+}
+.Snavbar a:hover span, .Snavbar li:hover > a span {
+  display: block;
+} 
