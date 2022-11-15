@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 9997;
+    z-index: 1;
     transition: all 0.5s;
     padding: 15px;
     
@@ -95,3 +95,41 @@ body{
 .Snavbar a:hover span, .Snavbar li:hover > a span {
   display: block;
 } 
+
+/*Mobile Navigation*/
+
+/* Display for Tablets */
+@media screen and (max-width:991px) {
+    
+  #header {
+   transform: translateX(-250px) ;
+  }
+}
+.mobile-nav-toggle {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 9998;
+  border: 0;
+  background: #F87714;
+  font-size: 45px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: #fff;
+  background-color: #F87714;
+}
+
