@@ -1,0 +1,20 @@
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* Body */
+body{
+    font-size:14px;
+    line-height: 22px;
+    color: rgb(59, 58, 58);
+    font-family:sans-serif;
+    background-color:#FAE0B4;
+  }
