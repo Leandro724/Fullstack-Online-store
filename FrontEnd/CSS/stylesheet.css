@@ -219,6 +219,13 @@ body{
   width: 100%;
   height: 75%;
 }
+#ComboImg{
+  border-radius: 20rem;
+}
+
+.Fproduct ul{
+  list-style: none;
+}
 
 
 /* Footer section */
