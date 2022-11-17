@@ -214,6 +214,11 @@ body{
   border-style: groove;
 }
 
+/* Images */
+#img{
+  width: 100%;
+  height: 75%;
+}
 
 
 /* Footer section */
