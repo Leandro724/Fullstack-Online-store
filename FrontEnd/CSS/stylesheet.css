@@ -213,6 +213,20 @@ body{
 .ComboDeal{
   border-style: groove;
 }
+.CproductD{
+  border-style: groove;
+  padding: 3rem;
+}
+.CproductD h1{
+  font-size: 70px;
+  font-weight: 700;
+  color:#e47022; 
+}
+.CproductD h3{
+  font-size: 30px;
+  font-weight: 700;
+  color:#fff;
+}
 
 /* Images */
 #img{
@@ -225,6 +239,12 @@ body{
 
 .Fproduct ul{
   list-style: none;
+}
+
+/* Testimonials Section */
+#Timg{
+
+  border-radius: 10rem;
 }
 
 
