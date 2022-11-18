@@ -167,12 +167,37 @@ body{
   background-color: #F87714;
 }
 
-
-
-
-
-
-
+/* -----------Featured Catergories----------- */
+.small-container{
+  margin: auto;
+  padding: 3rem 9rem;
+}
+#img{
+  width: 75%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 3rem;
+  position: relative;
+  
+}
+.title::after{
+  content: '';
+  background: #F87714;
+  width: 10rem;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.col-3,.col-4{
+  transition: transform 0.5s ;
+}
+.col-3:hover,.col-4:hover{
+  transform: scale(1.25);
+}
 
 
 
@@ -218,11 +243,7 @@ body{
   color:#fff;
 }
 
-/* Images */
-#img{
-  width: 100%;
-  height: 75%;
-}
+
 #ComboImg{
   border-radius: 20rem;
 }
