@@ -12,6 +12,11 @@
  
      <!-- CSS Stylsheet -->
      <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
      <!-- Font Awesome ICONS -->
      <script src="https://use.fontawesome.com/5966ab9ace.js"></script>
 </head>
@@ -22,16 +27,39 @@
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <!-- End of button -->
 
+
+      <!------- Header Section ------->
+
     <!-- Fixed Nav Section -->
-    <div class="Fnavbar">
-        <ul>
-          <li><a href="#" ><img src="images/Search Icon.png"></a></li>
-          <li><a href="#" ><img src="images/Profile Icon.png"></a></li>
-          <li><a href="#" ><img src="images/Cart Icon.png"></a></li>
-        </ul>
-    </div>
+
+      <div class="header">
+        <div class="container-fluid">
+            <div class="Fnavbar">
+                <div class="container">
+                  <ul>
+                    <li><a href="#" ><img src="images/Search Icon.png"></a></li>
+                    <li><a href="#" ><img src="images/Profile Icon.png"></a></li>
+                    <li><a href="#" ><img src="images/Cart Icon.png"></a></li>
+                  </ul>
+                </div>
+            </div>
+    
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <h1 class="display-1 text-white">Premier <br> Puffs</h1>
+                  <p class="text-white">Excellence Through Every Puff</p>
+                </div>
+                <div class="col-6">
+                    <img src="images/Logo.png">
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    
     <!-- Floating Nav Section -->
-    <header id="header" class="d-flex flex-column justify-content-center" >
+    <header id="StickyNav" class="d-flex flex-column justify-content-center" >
               
         <div class="Snavbar">
             <ul>
@@ -51,17 +79,8 @@
         </div>
     </header>
 
-     <!-- Jumbotron -->
-     <section id="hero" class="jumbotron d-flex flex-column justify-content-center">
 
-        <div id="hero-content" class="container" >
-
-            <h1 class="display-1">Premier Puffs</h1>
-           
-        </div>
-    </section>
-
-    <!-- Main Section -->
+    <!--------- Main Section ----------->
     <main id="main" class="main">
 
         <section id="" class="justify-content-center ">
@@ -267,13 +286,12 @@
               
               </div>
             </div>
-           
         </section>
 
     </main>
     
      <!-- Footer -->
-     <footer id="footer">
+      <footer id="footer">
 
         <div class="container-fluid">
           
@@ -335,6 +353,9 @@
       
         </div>
       </footer>
+
+
+
       <!-- Back to top button -->
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
