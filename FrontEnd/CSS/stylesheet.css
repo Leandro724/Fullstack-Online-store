@@ -198,17 +198,17 @@ body{
   left: 50%;
   transform: translateX(-50%);
 }
-.col-3,.col-4{
+#col-3,.col-4{
   transition: transform 0.5s ;
 }
-.col-3:hover,.col-4:hover{
+#col-3:hover,.col-4:hover{
   transform: scale(1.25);
 }
 
 
 /* Combo Deal section */
 .ComboDeal{
-  background: radial-gradient(#fff,#504a40);
+  background: radial-gradient(#fff,#000);
 }
 .CproductD{
   padding: 2rem;
@@ -262,8 +262,8 @@ body{
 
 /* Footer section */
 #footer {
-  background: rgb(167, 160, 160);
-  color: #45505b;
+  background: #000;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -283,6 +283,12 @@ body{
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+}
+#footer ul{
+ list-style: none;
+}
+#footer ul li{
+  font-style: italic;
 }
 
 #footer .social-links {
@@ -314,9 +320,6 @@ body{
   margin: 0 0 5px 0;
 }
 
-#footer .credits {
-  font-size: 13px;
-}
 
 /* Back to top button */
 .back-to-top {
