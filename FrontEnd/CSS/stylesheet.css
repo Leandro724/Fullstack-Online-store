@@ -352,3 +352,25 @@ body{
   opacity: 1;
 }
 /* End of button */
+
+
+/* All Products Page */
+
+.page-btn{
+  margin: 2rem auto 5rem;
+}
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #e47022;
+  margin-left: 1rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.page-btn span:hover{
+  background: #e47022;
+  color: #fff;
+}
