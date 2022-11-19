@@ -229,9 +229,34 @@ body{
 
 
 /* Testimonials Section */
-#Timg{
+.Testimonials{
+  padding-top: 2rem;
+}
+.Testimonials .col-4{
+  text-align: center;
+  padding: 1rem 1rem;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.Testimonials .col-4 img{
+  width: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+.TName{
+  font-size: 16px;
+  font-weight: 600;
+   
+}
 
-  border-radius: 10rem;
+
+.fa-star,.fa-star-o,.fa-quote-left{
+  color: #e47022;
+}
+
+.col-4 p{
+  font-size: 1rem;
 }
 
 
@@ -245,7 +270,7 @@ body{
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
