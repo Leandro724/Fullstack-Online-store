@@ -168,6 +168,12 @@ body{
 }
 
 /* -----------Featured Catergories----------- */
+
+
+.Fproduct ul{
+  list-style: none;
+}
+
 .small-container{
   margin: auto;
   padding: 3rem 9rem;
@@ -200,57 +206,27 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Combo Deal section */
 .ComboDeal{
-  border-style: groove;
+  background: radial-gradient(#fff,#504a40);
 }
 .CproductD{
-  border-style: groove;
-  padding: 3rem;
+  padding: 2rem;
 }
 .CproductD h1{
   font-size: 70px;
   font-weight: 700;
   color:#e47022; 
 }
-.CproductD h3{
-  font-size: 30px;
-  font-weight: 700;
-  color:#fff;
+.btn{
+  display: inline-block;
+  background: #e47022;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 4rem;
 }
 
-
-#ComboImg{
-  border-radius: 20rem;
-}
-
-.Fproduct ul{
-  list-style: none;
-}
 
 /* Testimonials Section */
 #Timg{
