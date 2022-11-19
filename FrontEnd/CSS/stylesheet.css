@@ -374,3 +374,34 @@ body{
   background: #e47022;
   color: #fff;
 }
+
+/* Product Description */
+.single-product{
+  margin-top: 6rem;
+}
+.single-product .col-6 img {
+  padding: 0;
+}
+.single-product .col-6{
+  padding: 2rem;
+}
+.single-product h4{
+  margin: 2rem 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product input{
+  width: 50px;
+  height: 35px;
+  padding-left: 1rem;
+  font-size: 20px;
+  margin-right: 1rem;
+  border: 1px solid #e47022;
+}
+input:focus{
+  outline: none;
+}
+
+
+
+
