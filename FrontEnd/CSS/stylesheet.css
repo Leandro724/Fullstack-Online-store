@@ -535,3 +535,14 @@ form a{
   transform: translateX(100px);
   transition: transform 1s;
 }
+.left h1{
+padding-top: 0;
+}
+.left p{
+  padding: 15pd 0 25px;
+}
+
+.right img{
+ width: 100%;
+ 
+}
