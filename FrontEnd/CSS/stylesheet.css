@@ -126,27 +126,14 @@ margin-right: 30px;
   display: initial;
 }
 
-@media (min-width: 992px) {
-  
-  .Snavbar a span, .Snavbar a:focus span {
-    display: none;
-  }
-}
+
 .Snavbar a:hover span, .Snavbar li:hover > a span {
   display: block;
 } 
 /*Mobile Navigation*/
 
 /* Display for Tablets */
-@media screen and (max-width:991px) {
-    
-  #StickyNav {
-   transform: translateX(-260px) ;
-  }
-  .cart-info p{
-    display: none;
-   }
-}
+
 .mobile-nav-toggle {
   position: fixed;
   left: 20px;
@@ -585,4 +572,36 @@ color: #fff;
 }
 .ContactDetails p{
   color: #504a40;
+}
+
+
+/* Media Queries */
+
+/* For Laptops */
+
+
+/* For Tablets */
+
+@media screen and (max-width:768px) {
+    
+  #StickyNav {
+   transform: translateX(-260px) ;
+  }
+  .cart-info p{
+    display: none;
+   }
+   .Fproduct ul li strong{
+    color: #F87714;
+   }
+   
+}
+
+/* For Mobile */
+
+
+@media (min-width: 768px) {
+  
+  .Snavbar a span, .Snavbar a:focus span {
+    display: none;
+  }
 }
