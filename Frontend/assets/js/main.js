@@ -121,3 +121,19 @@ for (let i = 0; i < SmallImg.length; i++) {
 }
 ImageGallery();
 console.log(SmallImg.length);
+
+// Toggle Form
+var LoginForm = document.getElementById("LoginForm");
+var RegisterForm = document.getElementById("RegisterForm");
+var ActiverForm = document.getElementById("ActiveForm");
+
+function Register(){
+  RegisterForm.style.transform = "translateX(0px)";
+  LoginForm.style.transform = "translateX(0px)";
+  ActiverForm.style.transform = "translateX(100px)";
+}
+function Login(){
+  RegisterForm.style.transform = "translateX(18rem)";
+  LoginForm.style.transform = "translateX(18rem)";
+  ActiverForm.style.transform = "translateX(0px)";
+}
