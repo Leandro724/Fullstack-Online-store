@@ -241,7 +241,7 @@ margin-right: 30px;
 .Testimonials{
   padding-top: 2rem;
 }
-.Testimonials .col-4{
+.Tcontainer{
   text-align: center;
   padding: 1rem 1rem;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
@@ -545,4 +545,44 @@ padding-top: 0;
 .right img{
  width: 100%;
  
+}
+
+/* Contact Page */
+.location{
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+}
+.location iframe{
+  width: 100%;
+}
+.ContactForm{
+  width: 25rem;
+  height: 30rem;
+ 
+}
+.ContactForm form{
+  max-width: 25rem;
+}
+.ContactForm form textarea{
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #e47022;
+}
+.ContactForm form textarea:focus{
+  outline: none;
+}
+.contact p{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: #504a40;
+}
+.ContactDetails .fa{
+font-size: 30px;
+color: #fff;
+}
+.ContactDetails p{
+  color: #504a40;
 }
