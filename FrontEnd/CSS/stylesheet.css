@@ -136,12 +136,12 @@ margin-right: 30px;
 
 .mobile-nav-toggle {
   position: fixed;
-  left: 20px;
-  top: 20px;
+  left: 35px;
+  top: 35px;
   z-index: 9998;
   border: 0;
   background: #F87714;
-  font-size: 45px;
+  font-size: 35px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 0;
@@ -168,7 +168,9 @@ margin-right: 30px;
 
 .Fproduct ul{
   list-style: none;
+  padding: 0;
 }
+
 
 .small-container{
   margin: auto;
@@ -200,6 +202,12 @@ margin-right: 30px;
 #col-3:hover,.col-4:hover{
   transform: scale(1.25);
 }
+.col-lg-4{
+  transition: transform 0.5s ;
+}
+.col-lg-4:hover{
+  transform: scale(1.25);
+}
 
 
 /* Combo Deal section */
@@ -214,6 +222,9 @@ margin-right: 30px;
   font-weight: 700;
   color:#e47022; 
 }
+.combo-img{
+  width: 100%;
+}
 .btn{
   display: inline-block;
   background: #e47022;
@@ -227,14 +238,16 @@ margin-right: 30px;
 /* Testimonials Section */
 .Testimonials{
   padding-top: 2rem;
+  
 }
 .Tcontainer{
   text-align: center;
   padding: 1rem 1rem;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin-top: 1rem;
 }
-.Testimonials .col-4 img{
+.Testimonials .col-lg-4 img{
   width: 5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -251,8 +264,8 @@ margin-right: 30px;
   color: #e47022;
 }
 
-.col-4 p{
-  font-size: 1rem;
+.col-lg-4 p{
+  font-size: 0.75rem;
 }
 
 
@@ -590,18 +603,28 @@ color: #fff;
   .cart-info p{
     display: none;
    }
-   .Fproduct ul li strong{
-    color: #F87714;
+
+   .Snavbar ul li a{
+    height: 50px;
+    padding-left: 10px;
    }
-   
+
+   .Snavbar ul li a img {
+    height: 45px;
+    width: 45px;
+  }
+
 }
-
-/* For Mobile */
-
 
 @media (min-width: 768px) {
   
   .Snavbar a span, .Snavbar a:focus span {
     display: none;
   }
+
 }
+
+/* For Mobile */
+
+
+
