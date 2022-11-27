@@ -122,6 +122,79 @@ class Product {
     return false;
   }
 
+  public function update() {
+    // Create query
+    $query = 'UPDATE ' . $this->table . '
+    SET
+    Prod_Name = :Prod_Name, 
+    Prod_Description = :Prod_Description, 
+    Prod_Price = :Prod_Price, 
+    Prod_Img_1 = :Prod_Img_1, 
+    Prod_Img_2 = :Prod_Img_2, 
+    Prod_Img_3 = :Prod_Img_3, 
+    Cat_id = :Cat_id                      
+    WHERE id = :id';
+
+    // Prepare statement
+    $stmt = $this->conn->prepare($query);
+
+    // Clean data (Sanitizing Data)
+    $this->Prod_Name = htmlspecialchars(strip_tags($this->Prod_Name));
+    $this->Prod_Description = htmlspecialchars(strip_tags($this->Prod_Description));
+    $this->Prod_Price = htmlspecialchars(strip_tags($this->Prod_Price));
+    $this->Prod_Img_1 = htmlspecialchars(strip_tags($this->Prod_Img_1));
+    $this->Prod_Img_2 = htmlspecialchars(strip_tags($this->Prod_Img_2));
+    $this->Prod_Img_3 = htmlspecialchars(strip_tags($this->Prod_Img_3));
+    $this->Cat_id = htmlspecialchars(strip_tags($this->Cat_id));
+    $this->id = htmlspecialchars(strip_tags($this->id));
+
+        // Bind data
+        $stmt->bindParam(':Prod_Name', $this->Prod_Name);
+        $stmt->bindParam(':Prod_Description', $this->Prod_Description);
+        $stmt->bindParam(':Prod_Price', $this->Prod_Price);
+        $stmt->bindParam(':Prod_Img_1', $this->Prod_Img_1);
+        $stmt->bindParam(':Prod_Img_2', $this->Prod_Img_2);
+        $stmt->bindParam(':Prod_Img_3', $this->Prod_Img_3);
+        $stmt->bindParam(':Cat_id', $this->Cat_id);
+        $stmt->bindParam(':id', $this->id);
+
+    // Execute query
+    if($stmt->execute()) {
+      return true;
+    }
+
+    // Print error if something goes wrong
+    printf("Error: %s.\n", $stmt->error);
+
+    return false;
+}
+
+ // Delete Product
+ public function delete() {
+    // Create query
+    $query = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+
+    // Prepare statement
+    $stmt = $this->conn->prepare($query);
+
+    // Clean data
+    $this->id = htmlspecialchars(strip_tags($this->id));
+
+    // Bind data
+    $stmt->bindParam(':id', $this->id);
+
+    // Execute query
+    if($stmt->execute()) {
+      return true;
+    }
+
+    // Print error if something goes wrong
+    printf("Error: %s.\n", $stmt->error);
+
+    return false;
+}
+
+
 }
 
 ?>
