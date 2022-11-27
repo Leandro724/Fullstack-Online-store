@@ -108,19 +108,9 @@
 
 })()
 
-// Image Gallery
-var ProductImg = document.getElementById("productImg");
-var SmallImg = document.getElementsByClassName("small-img");
 
-function ImageGallery (){
-for (let i = 0; i < SmallImg.length; i++) {
-  SmallImg[i].onclick = function(){
-    ProductImg.src = SmallImg[i].src;
-  }
-}
-}
-ImageGallery();
-console.log(SmallImg.length);
+
+
 
 // Toggle Form
 var LoginForm = document.getElementById("LoginForm");
@@ -137,3 +127,4 @@ function Login(){
   LoginForm.style.transform = "translateX(18rem)";
   ActiverForm.style.transform = "translateX(0px)";
 }
+

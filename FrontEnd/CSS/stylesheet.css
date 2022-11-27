@@ -378,6 +378,7 @@ margin-right: 30px;
   line-height: 40px;
   cursor: pointer;
   border-radius: 50%;
+  color: #000;
 }
 .page-btn span:hover{
   background: #e47022;
