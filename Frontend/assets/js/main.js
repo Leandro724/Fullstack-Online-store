@@ -128,3 +128,97 @@ function Login(){
   ActiverForm.style.transform = "translateX(0px)";
 }
 
+// Fetch APIs
+
+// API for all products
+// METHOD: GET
+const AllProducts = document.querySelector('.AllProducts');
+const AllProducts_2 = document.getElementById("AllProducts_2");
+const AllProducts_3 = document.getElementById("AllProducts_3");
+const Products = 'http://localhost/My_Rest_API/api/Products/read.php';
+let displayProducts = '';
+let displayProducts_2 = '';
+let displayProducts_3 = '';
+
+fetch(Products)
+.then(res => res.json())
+.then(data => {
+// Display all products 
+for (let i = 0; i < 12; i++) {
+  displayProducts+=`
+                  <div id="col-3" class="Fproduct col-3">
+                    <img id="img" src=${data[i].Prod_Img_1} class="img-fluid" alt="#">
+                      <ul>
+                        <li>
+                          <div class="data">
+                            <strong>${data[i].Prod_Name}</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="data">
+                            <strong>R${data[i].Prod_Price}.00</strong>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+  `;
+  AllProducts.innerHTML = displayProducts;
+  console.log(AllProducts_2);
+}
+
+});
+
+fetch(Products)
+.then(res => res.json())
+.then(data => {
+// Display all products
+for (let i = 12; i < 24; i++) {
+  displayProducts_2+=`
+                  <div id="col-3" class="Fproduct col-3">
+                    <img id="img" src=${data[i].Prod_Img_1} class="img-fluid" alt="#">
+                      <ul>
+                        <li>
+                          <div class="data">
+                            <strong>${data[i].Prod_Name}</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="data">
+                            <strong>R${data[i].Prod_Price}.00</strong>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+  `;
+  AllProducts_2.innerHTML = displayProducts_2;
+  console.log(AllProducts_2);
+}
+
+});
+fetch(Products)
+.then(res => res.json())
+.then(data => {
+// Display all products
+for (let i = 24; i < 32; i++) {
+  displayProducts_3+=`
+                  <div id="col-3" class="Fproduct col-3">
+                    <img id="img" src=${data[i].Prod_Img_1} class="img-fluid" alt="#">
+                      <ul>
+                        <li>
+                          <div class="data">
+                            <strong>${data[i].Prod_Name}</strong>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="data">
+                            <strong>R${data[i].Prod_Price}.00</strong>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+  `;
+  AllProducts_3.innerHTML = displayProducts_3;
+  console.log(AllProducts_3);
+}
+
+});
