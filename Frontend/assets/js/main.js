@@ -135,11 +135,16 @@ function Login(){
 const AllProducts = document.querySelector('.AllProducts');
 const AllProducts_2 = document.getElementById("AllProducts_2");
 const AllProducts_3 = document.getElementById("AllProducts_3");
+const Arrivals = document.getElementById("Arrivals");
+const Featured = document.getElementById("Featured");
 const Products = 'http://localhost/My_Rest_API/api/Products/read.php';
 let displayProducts = '';
 let displayProducts_2 = '';
 let displayProducts_3 = '';
+let displayProducts_4 = '';
+let displayProducts_5 = '';
 
+// Display on All Products Page
 fetch(Products)
 .then(res => res.json())
 .then(data => {
@@ -167,7 +172,7 @@ for (let i = 0; i < 12; i++) {
 }
 
 });
-
+// Display on All Products Page 2
 fetch(Products)
 .then(res => res.json())
 .then(data => {
@@ -195,6 +200,7 @@ for (let i = 12; i < 24; i++) {
 }
 
 });
+// Display on All Products Page 3
 fetch(Products)
 .then(res => res.json())
 .then(data => {
@@ -219,6 +225,68 @@ for (let i = 24; i < 32; i++) {
   `;
   AllProducts_3.innerHTML = displayProducts_3;
   console.log(AllProducts_3);
+}
+
+});
+// Display on Home Page Arrivals
+fetch(Products)
+.then(res => res.json())
+.then(data => {
+// Display all products
+for (let i = 9; i < 17; i++) {
+  displayProducts_4+=`
+  <div id="col-3" class="Fproduct col-lg-3 col-md-6">
+                   
+  <img id="img" src=${data[i].Prod_Img_1} class="img-fluid" alt="#">
+
+<ul>
+  <li>
+    <div class="data">
+        <strong>${data[i].Prod_Name}</strong>
+    </div>
+  </li>
+
+  <li>
+    <div class="data">
+        <strong>R${data[i].Prod_Price}.00</strong>
+    </div>
+  </li>
+</ul>
+</div>
+  `;
+  Arrivals.innerHTML = displayProducts_4;
+  console.log(Arrivals);
+}
+
+});
+// Display on Home Page Featured
+fetch(Products)
+.then(res => res.json())
+.then(data => {
+// Display all products
+for (let i = 23; i < 27; i++) {
+  displayProducts_5+=`
+  <div id="col-3" class="Fproduct col-lg-3 col-md-6">
+                   
+  <img id="img" src=${data[i].Prod_Img_1} class="img-fluid" alt="#">
+
+<ul>
+  <li>
+    <div class="data">
+        <strong>${data[i].Prod_Name}</strong>
+    </div>
+  </li>
+
+  <li>
+    <div class="data">
+        <strong>R${data[i].Prod_Price}.00</strong>
+    </div>
+  </li>
+</ul>
+</div>
+  `;
+  Featured.innerHTML = displayProducts_5;
+  console.log(Featured);
 }
 
 });
