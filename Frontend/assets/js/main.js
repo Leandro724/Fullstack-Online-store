@@ -144,7 +144,7 @@ let displayProducts_3 = '';
 let displayProducts_4 = '';
 let displayProducts_5 = '';
 
-// Display on All Products Page
+// Display on All Products Page 1
 fetch(Products)
 .then(res => res.json())
 .then(data => {

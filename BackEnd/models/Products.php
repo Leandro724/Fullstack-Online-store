@@ -4,7 +4,7 @@ class Product {
     private $conn;
     private $table = 'products';
 
-    // Post Properties
+    // Product Properties
     public $id;
     public $Cat_id;
     public $Category_Name;
